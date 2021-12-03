@@ -1,0 +1,15 @@
+{
+  "name": "MERN",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/sephtecs/ecommerce.git",
+  "author": "Joseph",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "license": "MIT",
+  "description": "MERN shopping cart app",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
