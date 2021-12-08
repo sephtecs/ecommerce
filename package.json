@@ -1,15 +1,24 @@
 {
   "name": "MERN",
   "version": "1.0.0",
+  "description": "MERN shopping cart app",
   "main": "server.js",
   "repository": "https://github.com/sephtecs/ecommerce.git",
   "author": "Joseph",
+  "type": "module",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "yarn --cwd frontend start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "license": "MIT",
-  "description": "MERN shopping cart app",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0"
   }
 }
